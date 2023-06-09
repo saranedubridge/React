@@ -23,20 +23,21 @@
 
 import React from 'react'
 
-function Hello() {
+function Hello(props) {
   return (
     <div>
-<p>Hello{props.name},you are {props.age} years old!</p>
+<p> Hello{props.name},you are {props.age} years old!</p>
 
       </div>
   )
 }
 function App() {
+  const age = 10;
   return (
     <div>
 <h1>Greetings</h1>
 <Hello name='saran' age={10+20}/>
-<hello name='krish' age={20}/>
+<Hello name='krish' age={age}/>
 
       </div>
   )
